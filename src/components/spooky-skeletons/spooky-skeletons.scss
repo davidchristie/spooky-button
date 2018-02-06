@@ -1,0 +1,23 @@
+.overlay {
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  &.strobe {
+    animation: strobe 200ms infinite;
+  }
+
+  .skeleton {
+    display: block;
+    position: absolute;
+  }
+}
+
+@keyframes strobe {
+  0% { background-color: rgba($color: black, $alpha: 0.5) }
+  50% { background-color: rgba($color: white, $alpha: 0.5) }
+  100% { background-color: rgba($color: black, $alpha: 0.5) }
+}

@@ -1,0 +1,50 @@
+{
+  "author": "David Christie",
+  "bugs": {
+    "url": "https://github.com/ionic-team/stencil"
+  },
+  "browser": "dist/spooky.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "dependencies": {
+    "@stencil/core": "0.2.3"
+  },
+  "description": "Spooky Button",
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "jest": "^21.2.1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "ts",
+      "tsx"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/spooky.js",
+  "name": "my-component",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "scripts": {
+    "build": "stencil build",
+    "serve": "stencil-dev-server",
+    "start": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "test": "jest --no-cache"
+  },
+  "types": "dist/types/index.d.ts",
+  "version": "0.0.1"
+}

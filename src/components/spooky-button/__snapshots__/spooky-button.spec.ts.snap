@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spooky-button rendering on click 1`] = `
+<spooky-button
+  class="hydrated"
+>
+  <button
+    class="clicked"
+  >
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    <!---->
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    <spooky-skeletons />
+  </button>
+</spooky-button>
+`;
+
+exports[`spooky-button rendering with content 1`] = `
+<spooky-button
+  class="hydrated"
+>
+  <button
+    class=""
+  >
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    <!---->
+    
+            Test content
+          
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    
+  </button>
+</spooky-button>
+`;
+
+exports[`spooky-button rendering without content 1`] = `
+<spooky-button
+  class="hydrated"
+>
+  <button
+    class=""
+  >
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    <!---->
+    <span
+      class="skull"
+    >
+      💀
+    </span>
+    
+  </button>
+</spooky-button>
+`;

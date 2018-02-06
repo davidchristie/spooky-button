@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>Spooky Button</title>
+    <script src="/build/spooky.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .content {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SEIZURE WARNING</h1>
+    <div class='content'>
+      <spooky-button>Click me</spooky-button>
+    </div>
+  </body>
+</html>
